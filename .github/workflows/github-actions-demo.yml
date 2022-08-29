@@ -14,10 +14,4 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Echo github object in the repository
-        run: |
-          echo ${{ github }}
-      - name: Echo runner object in the repository
-        run: |
-          echo ${{ runner }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
